@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESC-sem Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+function gradeToNumber(grade) {
+    switch (grade.toUpperCase()) {
+        case "A*":
+        case "A":
+            return 10;
+        case "B+":
+            return 9;
+        case "B":
+            return 8;
+        case "C+":
+            return 7;
+        case "C":
+            return 6;
+        case "D+":
+            return 5;
+        case "D":
+            return 4;
+        case "F":
+            return 0;
+        default:
+            return null; // Return null for invalid grades
+    }
+}
+
+function submitGrades() {
+    
+    var phy = document.getElementById("phyGrade").value;
+    var esc111 = document.getElementById("esc111Grade").value;
+    var esc112 = document.getElementById("esc112Grade").value;
+    var mth113 = document.getElementById("mth113Grade").value;
+    var mth114 = document.getElementById("mth114Grade").value;
+    var lif = document.getElementById("lifGrade").value;
+    var chm111 = document.getElementById("chm111Grade").value;
+
+    var result = 11*gradeToNumber(phy) + 7*gradeToNumber(esc111) + 7*gradeToNumber(esc112) + 6*gradeToNumber(mth113)+ 6*gradeToNumber(mth114) + 6*gradeToNumber(lif) + 3*gradeToNumber(chm111);
+    result = result/46; 
+    document.getElementById("result").innerHTML = "Your SPI is: " + result.toFixed(2);
+}
+
+    </script>
+</head>
+<body>
+    <h1>ESC-sem grade Calculator</h1>
+    <form>
+        <div>
+            <label for="phyGrade">PHY Grade:</label>
+            <select id="phyGrade" name="phyGrade">
+                <option value="A*">A*</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="esc111Grade">ESC111 Grade:</label>
+            <select id="esc111Grade" name="esc111Grade">
+                <option value="A*">A*</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="esc112Grade">ESC112 Grade:</label>
+            <select id="esc112Grade" name="esc112Grade">
+                <option value="A*">A*</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mth113Grade">MTH113 Grade:</label>
+            <select id="mth113Grade" name="mth113Grade">
+                <option value="A*">A*</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mth114Grade">MTH114 Grade:</label>
+            <select id="mth114Grade" name="mth114Grade">
+                <option value="A*">A*</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="lifGrade">LIF Grade:</label>
+            <select id="lifGrade" name="lifGrade">
+                <option value="A*">A*</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="chm111Grade">CHM111 Grade:</label>
+            <select id="chm111Grade" name="chm111Grade">
+                <option value="A*">A*</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+
+        <button type = "button" onclick="submitGrades()">Submit</button>
+    </form>
+    <div id="result"></div>
+
+   
+</body>
+</html>
