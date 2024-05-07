@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>ESC-sem Grade Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script>
@@ -47,7 +48,9 @@ function submitGrades() {
     </script>
 </head>
 <body>
-    <h1>ESC-sem grade Calculator</h1>
+    <h1  class="glow">ESC-sem grade Calculator</h1>
+    
+
     <form>
         <div>
             <label for="phyGrade">PHY Grade:</label>
@@ -155,8 +158,9 @@ function submitGrades() {
         </div>
 
         <button type = "button" onclick="submitGrades()">Submit</button>
+        <div id="result"></div>
     </form>
-    <div id="result"></div>
+    
 
    
 </body>
