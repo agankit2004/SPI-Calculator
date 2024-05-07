@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPI Calculator</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .button-container {
+    text-align: center;
+  }
+  .button {
+    font-size: 24px;
+    padding: 20px 40px;
+    margin: 10px;
+  }
+</style>
+
+</head>
+<body>
+    <h1>Choose Your Current semester :</h1>
+    
+
+<div class="button-container">
+  <button class="button" id="escButton">ESC</button>
+  <button class="button" id="taButton">TA</button>
+</div>
+
+<script>
+    document.getElementById("escButton").addEventListener("click", function() {
+    window.location.href = "esc.html";
+    });
+
+    document.getElementById("taButton").addEventListener("click", function() {
+    window.location.href = "ta.html";
+    });
+</script>
+
+</body>
+</html>
