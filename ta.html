@@ -49,10 +49,10 @@
             </script>
 </head>
 <body>
-    <h1>TA-sem grade Calculator</h1>
+    <h1 class="glow"> TA-sem grade Calculator</h1>
     <form>
         <div>
-            <label for="phyGrade">PHY(112/113/114/115) Grade:</label>
+            <label for="phyGrade">PHY112 Grade:</label>
             <select id="phyGrade" name="phyGrade">
                 <option value="A*">A*</option>
                 <option value="A">A</option>
@@ -172,7 +172,8 @@
         </div>
 
         <button type = "button" onclick="submitGrades()">Submit</button>
+        <div id="result"></div>
     </form>
-    <div id="result"></div>
+    
 </body>
 </html>
