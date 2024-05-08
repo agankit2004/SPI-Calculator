@@ -36,7 +36,7 @@
   text-align: center;
   color: #000;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   margin-left: 30px;
   margin-bottom: 30px;
   cursor: pointer;
@@ -54,11 +54,28 @@
     border: 3px solid #00d7c3;
   }
 
+  .glow {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00d7c3, 0 0 40px #00d7c3, 0 0 50px #00d7c3, 0 0 60px #00d7c3, 0 0 70px #00d7c3;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #1effe8, 0 0 40px #1effe8, 0 0 50px #1effe8, 0 0 60px #1effe8, 0 0 70px #1effe8, 0 0 80px #1effe8;
+    }
+  }
+
 </style>
 
 </head>
 <body>
-    <h1>Choose Your Current semester :</h1>
+    <h1 class="glow">Choose Your Current semester :</h1>
     
 
 <div class="button-container">
