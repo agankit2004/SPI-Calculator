@@ -4,15 +4,23 @@ body{
     background-color: black;
     color: #fff;
     text-transform: uppercase;
+ 
 }
 form {
-    border: 1px solid #ccc;
+    border: 1px solid #00d7c3;
     padding: 20px;
-    width: 300px; 
+    width: 300px;
+    border-radius: 20px;
+    
+    box-shadow: 0 0 20px 5px #aef3ec;
+
+    
+    
   }
   
   form div {
     margin-bottom: 10px;
+   
   }
   
   form label {
@@ -20,14 +28,18 @@ form {
     width: 150px; 
     text-align: right;
     margin-right: 10px;
+
+ 
   }
 h1{
     text-align: center;
+    margin-top: 40px;
 }
 #result{
     font-weight: bold;
     font-size: 20px;
 }
+
 button{
   width: 100px;
   padding-top: 3px;
@@ -72,3 +84,12 @@ button:hover{
       text-shadow: 0 0 20px #fff, 0 0 30px #1effe8, 0 0 40px #1effe8, 0 0 50px #1effe8, 0 0 60px #1effe8, 0 0 70px #1effe8, 0 0 80px #1effe8;
     }
   }
+
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+ 
+}
