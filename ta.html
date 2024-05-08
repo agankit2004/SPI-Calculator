@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TA-sem Grade Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script>
@@ -25,7 +27,7 @@
                 case "F":
                     return 0;
                 default:
-                    return null; // Return null for invalid grades
+                    return null; 
             }
         }
         
@@ -50,6 +52,8 @@
 </head>
 <body>
     <h1 class="glow"> TA-sem grade Calculator</h1>
+    <div id="box">
+
     <form>
         <div>
             <label for="phyGrade">PHY112 Grade:</label>
@@ -174,6 +178,8 @@
         <button type = "button" onclick="submitGrades()">Submit</button>
         <div id="result"></div>
     </form>
+
+</div>
     
 </body>
 </html>
